@@ -1,5 +1,6 @@
 import pandas as pd
 import numpy as np
+import tensorflow as tf
 import streamlit as st
 import os
 from os import listdir
@@ -32,15 +33,14 @@ st.sidebar.info(
 
 #Load model
 to_res = (224, 224)
-loaded_model = load_model('model.h5')
+loaded_model = load_model('my.h5')
 
 # Designing the interface
 st.title("COVID-19 CT scans Classification App")
 # For newline
 st.write('\n')
 
-image = Image.open('normal_1.png')
-show = st.image(image, use_column_width=True)
+
 
 st.sidebar.title("Upload Image")
 
