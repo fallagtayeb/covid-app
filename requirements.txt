@@ -1,7 +1,4 @@
 keras
 numpy
 streamlit
-Pillow
-joblib
-pandas
 tensorflow-cpu
